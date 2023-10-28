@@ -3,13 +3,13 @@
     border:1px solid #bfbfc1;
     border-radius: 10%;
     
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-family: "Fredoka", sans-serif;
     font-weight: bold;
-    line-height: 5rem;
+    line-height: 4rem;
     margin: 0.5rem;
 }
 
