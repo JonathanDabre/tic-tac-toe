@@ -4,7 +4,7 @@ import Board from './components/Board';
 import ScoreBoard from './components/ScoreBoard';
 import ResetButton from './ResetButton';
 // import Box from './components/Box';
-import './index.css'
+// import './index.css'
 
 function App() {
   const WIN_CONDITIONS = [
@@ -27,7 +27,7 @@ function App() {
   const handleBoxClick = (boxIdx) => {
     const updatedBoard = board.map((value, idx) => {
       if (idx === boxIdx) {
-        console.log(idx)
+        // console.log(idx)
         return xPlaying === true ? "X" : "O";
       } else {
         return value;
@@ -97,10 +97,10 @@ function App() {
 
   return (
     <>
-      <div className="App bg-white ">
+      <div className="h-screen bg-[#0E1927] pt-10 pb-16">
         <div className="mx-auto w-fit text-center">
-          <h2 className={`heading ${gameOver ? 'text-xl':'text-6xl' }  mt-10 text-[#44475B] font-semibold`}>Tic-tac-toe</h2>
-          <h4 className={`subHeading ${gameOver ? 'text-6xl':'text-xl' } mt-2 font-semibold text-gray-700`}>{subHeading} </h4>
+          <h2 className={`heading ${gameOver ? 'text-xl':'text-6xl' }  text-[#E7E9ED] font-semibold`}>Tic-tac-toe</h2>
+          <h4 className={`subHeading ${gameOver ? 'text-6xl text-[#3CC576]':'text-2xl' } mt-2 font-semibold text-[#C6C8D7]`}>{subHeading} </h4>
         </div>
         
         <ScoreBoard scores={scores} xPlaying={xPlaying} />

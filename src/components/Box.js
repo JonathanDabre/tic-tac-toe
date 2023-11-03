@@ -7,7 +7,7 @@ const Box = ({value, onClick}) =>{
     
   return (
     
-    <button className={`${value=== 'X'?'text-[#15C28B]': 'text-[#316F87]' } hover:shadow-md bg-white text-6xl rounded-lg text-center  font-semibold shadow-sm border w-20 h-20 flex justify-center`} onClick={onClick} >{value}</button>
+    <button className={`${value=== 'X'?'text-[#3CC576]': 'text-[#4e75b4]' } hover:shadow-md bg-[#122232] text-6xl rounded-lg text-center  font-semibold shadow-sm  w-20 h-20 flex justify-center`} onClick={onClick} >{value}</button>
   )
 }
 
